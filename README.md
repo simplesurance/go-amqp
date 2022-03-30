@@ -19,11 +19,9 @@ the future. You should vendor them to avoid spurious breakage.**
 
 ## Packages
 
-Instrumentation is provided for the following packages, with the
-following caveats:
+Instrumentation is provided for the following packages:
 
-- **github.com/rabbitmq/amqp091-go**: Client and server instrumentation. *Only supported
-  with Go 1.7 and later.*
+- **github.com/rabbitmq/amqp091-go**: Client and server instrumentation
 
 ## Required Reading
 
