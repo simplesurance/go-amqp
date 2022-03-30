@@ -1,7 +1,14 @@
 # go-amqp
 
-[![Build Status]](https://travis-ci.org/opentracing-contrib/go-amqp)
-[![GoDoc]](http://godoc.org/github.com/opentracing-contrib/go-amqp/amqptracer)
+[![GoDoc]](http://godoc.org/github.com/simplesurance/go-amqp/amqptracer)
+
+This is a fork of
+[opentracing-contrib/go-amqp](https://github.com/opentracing-contrib/go-amqp). \
+It is compatible with the
+[rabbitmq/amqp091-go](https://github.com/rabbitmq/amqp091-go) Client instead of
+with [streadway/amqp](https://github.com/streadway/amqp).
+
+-----
 
 [AMQP] instrumentation in Go
 
@@ -15,7 +22,7 @@ the future. You should vendor them to avoid spurious breakage.**
 Instrumentation is provided for the following packages, with the
 following caveats:
 
-- **github.com/streadway/amqp**: Client and server instrumentation. *Only supported
+- **github.com/rabbitmq/amqp091-go**: Client and server instrumentation. *Only supported
   with Go 1.7 and later.*
 
 ## Required Reading
@@ -76,7 +83,7 @@ between the producers and the consumers.
 [OpenTracing project]: http://opentracing.io
 [terminology]: http://opentracing.io/documentation/pages/spec.html
 [OpenTracing API for Go]: https://github.com/opentracing/opentracing-go
-[AMQP]: https://github.com/streadway/amqp
-[Build Status]: https://travis-ci.org/opentracing-contrib/go-amqp.svg
-[GoDoc]: https://godoc.org/github.com/opentracing-contrib/go-amqp/amqptracer?status.svg
-[check godoc]: https://godoc.org/github.com/opentracing-contrib/go-amqp/amqptracer
+[AMQP]: https://github.com/rabbitmq/amqp/amqp091-go
+[GoDoc]: https://godoc.org/github.com/simplesurance/go-amqp/amqptracer?status.svg
+[check godoc]: https://godoc.org/github.com/simplesurance/go-amqp/amqptracer
+
